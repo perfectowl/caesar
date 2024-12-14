@@ -109,7 +109,7 @@ root.geometry("600x700")
 # Ввод сообщения
 message_frame = ttk.Frame(root)
 message_frame.pack(pady=5, fill=tk.X)
-ttk.Label(message_frame, text="Введите сообщение для шифрования:").pack(anchor=tk.W)
+ttk.Label(message_frame, text="Введите сообщение для шифрования/взлома:").pack(anchor=tk.W)
 message_input = tk.Text(message_frame, height=4, wrap=tk.WORD)
 message_input.pack(fill=tk.BOTH, padx=5, expand=True)
 ttk.Button(message_frame, text="Копировать", command=lambda: copy(message_input.get("1.0", tk.END).strip())).pack(side=tk.LEFT, padx=2)
